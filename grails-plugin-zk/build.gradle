@@ -1,5 +1,8 @@
 dependencies {
-    compile "org.springframework:spring-tx:${springVersion}"
+    compile "org.zkoss.zk:zk:${zkVersion}"
+    compile "org.zkoss.zk:zul:${zkVersion}"
+    compile "org.zkoss.zk:zkplus:${zkVersion}"
+    compile "org.zkoss.zk:zhtml:${zkVersion}"
 
     compile project(":grails-core"),
             project(':grails-bootstrap')

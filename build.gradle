@@ -3,6 +3,7 @@ import org.apache.tools.ant.filters.ReplaceTokens
 buildscript {
     repositories {
         mavenRepo(urls: "http://repo.grails.org/grails/core")
+        mavenRepo(urls: "http://mavensync.zkoss.org/maven2")
     }
     dependencies {
         classpath "commons-io:commons-io:1.4"
@@ -33,6 +34,7 @@ commonsBeanUtilsVersion = "1.8.0"
 commonsIOVersion = "1.4"
 commonsLangVersion = "2.4"
 slf4jVersion = "1.6.1"
+zkVersion = "5.0.7.1"
 
 archivesBaseName = 'grails'
 version = grailsVersion
