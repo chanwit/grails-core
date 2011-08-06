@@ -5,6 +5,7 @@ dependencies {
     compile "org.zkoss.zk:zhtml:${zkVersion}"
 
     compile project(":grails-core"),
-            project(':grails-bootstrap')
+            project(":grails-bootstrap"),
+            project(":grails-web")
 }
 jar.appendix = 'plugin-zk'

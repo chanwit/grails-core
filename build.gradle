@@ -97,6 +97,7 @@ subprojects { project ->
                 setSnapshotTimeout(Long.parseLong(project.snapshotTimeout))
             }
         }
+        mavenRepo(urls: "http://mavensync.zkoss.org/maven2")
     }
 
     dependencies {
