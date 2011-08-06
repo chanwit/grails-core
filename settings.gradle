@@ -29,6 +29,7 @@ include 'grails-bootstrap',
         'grails-plugin-testing',
         'grails-plugin-tomcat',
         'grails-plugin-async',
+        'grails-plugin-zk',
 
         // Test Suite
         'grails-test-suite-base',
