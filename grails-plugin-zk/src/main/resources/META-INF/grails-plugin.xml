@@ -1,0 +1,3 @@
+<plugin name='zk'>
+  <type>org.codehaus.groovy.grails.plugins.zk.ZkGrailsPlugin</type>
+</plugin>
