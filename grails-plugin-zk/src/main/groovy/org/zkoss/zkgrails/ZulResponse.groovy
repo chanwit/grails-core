@@ -4,12 +4,12 @@ import javax.servlet.ServletContext
 import javax.servlet.http.HttpServletRequest
 import javax.servlet.http.HttpServletResponse
 import javax.servlet.http.HttpServletResponseWrapper
-import org.apache.log4j.Logger
+// import org.apache.log4j.Logger
 
 
 class ZulResponse {
 
-    private static Logger LOG = Logger.getLogger(ZulResponse)
+    // private static Logger LOG = Logger.getLogger(ZulResponse)
 
     def model = [:]
     def status = [:]
@@ -27,7 +27,7 @@ class ZulResponse {
         } catch (Exception ex) {
             status.ok = false
             status.exception = ex
-            LOG.error "Failed to process url $urlStr. Exception: $ex"
+            // LOG.error "Failed to process url $urlStr. Exception: $ex"
             return
         }
         status.ok = true
@@ -56,7 +56,7 @@ class ZulResponse {
             } else {
                 model[name] = "regexp $regexp not found\n\n\n$model.source"
                 err = true
-                LOG.error model[name]
+                // LOG.error model[name]
             }
         }
         //long end = System.currentTimeMillis()

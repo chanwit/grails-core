@@ -98,6 +98,7 @@ subprojects { project ->
             }
         }
         mavenRepo(urls: "http://mavensync.zkoss.org/maven2")
+        mavenRepo(urls: "file://localhost//home/chanwit/projects/zkgrails-full/zkgrails-aspect/zk/repo")
     }
 
     dependencies {

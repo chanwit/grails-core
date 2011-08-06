@@ -1,5 +1,5 @@
 dependencies {
-    compile "org.zkoss.zk:zk:${zkVersion}"
+    compile "org.zkoss.zk.grails:zk:${zkVersion}"
     compile "org.zkoss.zk:zul:${zkVersion}"
     compile "org.zkoss.zk:zkplus:${zkVersion}"
     compile "org.zkoss.zk:zhtml:${zkVersion}"
