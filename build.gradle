@@ -2,8 +2,7 @@ import org.apache.tools.ant.filters.ReplaceTokens
 
 buildscript {
     repositories {
-        mavenRepo(urls: "http://repo.grails.org/grails/core")
-        mavenRepo(urls: "http://mavensync.zkoss.org/maven2")
+        mavenRepo(urls: "http://203.158.7.11/artifactory/repo")
     }
     dependencies {
         classpath "commons-io:commons-io:1.4"
@@ -36,7 +35,7 @@ commonsLangVersion = "2.4"
 slf4jVersion = "1.6.1"
 zkVersion = "5.0.7.1"
 
-archivesBaseName = 'grails'
+archivesBaseName = 'benjarong'
 version = grailsVersion
 
 // Groovy is added as a dependency to both the 'groovy' and 'compile'
@@ -92,13 +91,11 @@ subprojects { project ->
     }
 
     repositories {
-        mavenRepo(urls: "http://repo.grails.org/grails/core") {
+        mavenRepo(urls: "http://203.158.7.11/artifactory/repo") {
             if (project.hasProperty('snapshotTimeout')) {
                 setSnapshotTimeout(Long.parseLong(project.snapshotTimeout))
             }
         }
-        mavenRepo(urls: "http://mavensync.zkoss.org/maven2")
-        mavenRepo(urls: "file://localhost//home/chanwit/projects/zkgrails-full/zkgrails-aspect/zk/repo")
     }
 
     dependencies {
