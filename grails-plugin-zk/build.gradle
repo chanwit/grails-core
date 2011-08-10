@@ -1,8 +1,16 @@
+configurations {
+    compile.exclude group: "org.zkoss.zk", module: "zk"
+    compile.exclude group: "org.zkoss.zk", module: "zul"
+}
+
 dependencies {
     compile "org.zkoss.zk.grails:zk:${zkVersion}"
-    compile "org.zkoss.zk:zul:${zkVersion}"
+    compile "org.zkoss.zk.grails:zul:${zkVersion}"
     compile "org.zkoss.zk:zkplus:${zkVersion}"
     compile "org.zkoss.zk:zhtml:${zkVersion}"
+    compile "org.zkoss.common:zcommon:${zkVersion}"
+    compile "org.zkoss.common:zweb:${zkVersion}"
+    compile "org.zkoss.zkforge.el:zcommons-el:1.1.0"
 
     compile project(":grails-core"),
             project(":grails-bootstrap"),
